@@ -171,3 +171,29 @@ input:focus-visible { outline: 2px solid #83b4ff; outline-offset: 3px; }
 
 
 @media(max-width:650px){header{flex-wrap:nowrap;gap:8px}.brand{font-size:18px}.brand .cube{font-size:26px;margin-right:4px}.header-social{flex-shrink:0;gap:6px}.header-social .social-link{font-size:10px;padding:10px 8px;gap:5px}}@media(max-width:359px){.header-social .instagram span{display:none}.header-social .instagram{min-width:44px}.brand{font-size:17px}}
+
+/* Mobile: reveal the hero only after the opening has finished. */
+@media(max-width:650px){
+ .intro-stage{padding:24px;width:100%}
+ .intro-cube{width:clamp(118px,34vw,155px);height:auto;filter:drop-shadow(0 0 14px #1b82ff88)}
+ .intro-wordmark{font-size:clamp(32px,9vw,42px)}
+ .intro-tagline{max-width:260px;line-height:1.9}
+ .intro-progress span{animation-duration:2s}
+ .intro-skip{left:50%;right:auto;transform:translateX(-50%);white-space:nowrap;min-height:48px;bottom:calc(20px + env(safe-area-inset-bottom,0px))}
+ .val-intro{transition:opacity .35s ease}
+ .val-intro.is-leaving{transform:none}
+ .impact-content{animation:none}
+}
+@media(max-width:650px) and (prefers-reduced-motion:no-preference){
+ .hero-ready .impact-art img{animation:mobile-art-reveal .9s ease-out both}
+ .hero-ready .impact-kicker{animation:mobile-content-reveal .55s ease-out .08s both}
+ .hero-ready .impact-hero h1{animation:mobile-content-reveal .65s ease-out .16s both}
+ .hero-ready .impact-lead{animation:mobile-content-reveal .6s ease-out .26s both}
+ .hero-ready .impact-actions{animation:mobile-content-reveal .6s ease-out .36s both}
+}
+@media(max-height:480px) and (orientation:landscape){
+ .intro-stage{padding:12px 24px 65px}.intro-cube{width:72px;height:76px;margin-bottom:12px}
+ .intro-wordmark{font-size:28px}.intro-tagline{margin-top:10px}.intro-progress{margin-top:14px}
+}
+@keyframes mobile-art-reveal{from{opacity:.5;transform:scale(1.045)}to{opacity:1;transform:scale(1)}}
+@keyframes mobile-content-reveal{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
