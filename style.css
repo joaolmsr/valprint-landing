@@ -29,3 +29,127 @@ footer>a:last-child,footer>a[aria-label]{min-height:44px;display:inline-flex;ali
 }
 @media(max-width:359px){header{padding:0 12px}.brand{font-size:17px}.brand .cube{font-size:24px;margin-right:4px}.header-social .social-link{padding:9px 7px;gap:4px}.header-social svg{width:16px;height:16px}.services article{padding:18px;grid-template-columns:48px 1fr;gap:12px}.services .object{font-size:57px}.wrap{padding-left:18px;padding-right:18px}}
 @media(max-width:359px){header{gap:6px}.brand{font-size:15px}.brand small{font-size:9px}.brand .cube{font-size:20px;margin-right:2px}.header-social{gap:5px}.header-social .social-link{font-size:9px;padding:9px 6px}}
+/* Experiência mobile: acrescente estas regras após os estilos existentes. */
+:root { --mobile-gutter: clamp(16px, 4.8vw, 24px); }
+img, svg { vertical-align: middle; }
+img { max-width: 100%; }
+.services > *, .process-grid > *, .faq > *, .section-head > *,
+.form-line > *, .banner-bottom > * { min-width: 0; }
+button, a, summary { touch-action: manipulation; }
+input, textarea, select { font: inherit; }
+input:focus-visible { outline: 2px solid #83b4ff; outline-offset: 3px; }
+
+@media (max-width: 800px) {
+  /* Previne o layout de duas colunas ficar apertado em celulares deitados. */
+  .process-grid, .faq { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .section-head { display: block; }
+  .section-head > p { max-width: 48ch; }
+  .services { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 650px) {
+  html { scroll-padding-top: 20px; scroll-padding-bottom: 110px; }
+  body { padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px)); }
+  .wrap { padding-inline: var(--mobile-gutter); }
+  header {
+    min-height: 72px; height: auto; padding: 12px var(--mobile-gutter);
+    gap: 10px; flex-wrap: wrap; align-items: center;
+  }
+  .brand { flex-shrink: 0; font-size: 20px; }
+  .header-social { margin-left: auto; gap: 7px; }
+  .header-social .social-link {
+    min-height: 44px; padding: 10px; font-size: 11px; gap: 6px;
+  }
+  .header-social svg { width: 18px; height: 18px; }
+  .nav-cta { min-height: 44px; display: inline-flex; align-items: center; }
+  .hero { min-height: 0; padding-top: 30px; gap: 26px; }
+  .hero h1 { font-size: clamp(66px, 20vw, 100px); line-height: .94; }
+  .lead, .services p, .process p:not(.eyebrow), details p,
+  .section-head > p { font-size: 15px; line-height: 1.75; }
+  .actions { gap: 12px; }
+  .actions .button { width: 100%; min-height: 58px; font-size: 14px; }
+  .actions .text-link { min-height: 44px; display: inline-flex; align-items: center; }
+  .image-tag { left: 12px; right: 12px; bottom: 12px; font-size: 8px; }
+  .intro-banner { padding-top: 0; }
+  .banner-image { width: 100%; height: auto; object-fit: contain; }
+  .banner-bottom { gap: 22px; padding-block: 26px 32px; }
+  .banner-description { font-size: clamp(23px, 6.2vw, 29px); line-height: 1.4; }
+  .eyebrow, .banner-bottom .eyebrow {
+    font-size: 10px; line-height: 1.7; letter-spacing: 1.4px;
+  }
+  .intro-actions { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .intro-actions .social-link { min-height: 58px; font-size: 14px; padding: 16px; }
+  .intro-actions .whatsapp { min-height: 64px; font-size: 14px; }
+  .intro-actions .explore-link { min-height: 44px; display: grid; place-items: center; font-size: 12px; }
+  .ticker { gap: 20px; font-size: 17px; padding: 19px var(--mobile-gutter); }
+  h2 { font-size: clamp(28px, 7.8vw, 35px); line-height: 1.18; letter-spacing: -1px; }
+  .possibilities, .faq { padding-block: 44px; }
+  .section-head { margin-bottom: 24px; }
+  .services { gap: 14px; }
+  .services article {
+    display: grid; grid-template-columns: 50px minmax(0, 1fr);
+    column-gap: 15px; padding: 22px 18px; border-radius: 12px;
+  }
+  .services .object { font-size: 58px; height: 80px; }
+  .services .card-label { font-size: 9px; line-height: 1.6; letter-spacing: .7px; }
+  .services h3 { font-size: 19px; line-height: 1.4; margin-bottom: 10px; }
+  .caption { font-size: 12px; line-height: 1.7; }
+  .process { padding-block: 44px; }
+  .process li { gap: 18px; padding-block: 22px; }
+  .process li > span { flex-shrink: 0; }
+  .process h3 { font-size: 19px; line-height: 1.4; }
+  summary { font-size: 16px; min-height: 64px; line-height: 1.5; padding: 20px 30px 20px 0; }
+  details p { padding-right: 8px; margin-bottom: 22px; }
+  .contact { margin: 0 var(--mobile-gutter) 32px; padding: 30px 20px; }
+  .contact h2 { font-size: clamp(33px, 9vw, 43px); letter-spacing: -1.3px; }
+  .contact > p:not(.eyebrow) { font-size: 15px; line-height: 1.75; }
+  form { margin-top: 26px; }
+  label { font-size: 14px; line-height: 1.5; }
+  .form-line { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  input { font-size: 16px; min-height: 56px; width: 100%; padding: 16px 13px; }
+  .form-line .button { min-height: 58px; font-size: 14px; padding: 16px 12px; }
+  .contact-networks .social-link {
+    width: 100%; min-height: 52px; font-size: 12px; gap: 8px;
+    padding: 13px 10px; overflow-wrap: anywhere;
+  }
+  .contact-networks .social-link > span { min-width: 0; }
+  .phone { font-size: 14px; min-height: 48px; margin-top: 14px; }
+  .contact-dock {
+    left: 10px; right: 10px; bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+    padding: 7px; gap: 8px; background: #0a1224; backdrop-filter: none;
+  }
+  .contact-dock .social-link { flex: 1 1 0; min-width: 0; min-height: 52px; font-size: 13px; padding: 12px 8px; gap: 8px; }
+  footer { padding-block: 26px 22px; gap: 16px; }
+  footer > span, footer > a:last-child { font-size: 12px; }
+  /* Compativel com a abertura e a animação da versão mais recente. */
+  .impact-kicker { font-size: 9px; letter-spacing: 1px; line-height: 1.7; }
+  .impact-hero h1 { font-size: clamp(64px, 19.5vw, 96px); }
+  .impact-lead { font-size: 15px; line-height: 1.7; }
+  .impact-actions .whatsapp { min-height: 64px; font-size: 14px; padding: 18px 12px; }
+  .impact-actions .instagram { min-height: 56px; font-size: 13px; }
+  .impact-reassurance { font-size: 12px; line-height: 1.7; }
+  .impact-topics { font-size: 8px; letter-spacing: .8px; flex-wrap: wrap; }
+  .intro-skip { min-height: 48px; font-size: 13px; }
+}
+
+@media (max-width: 359px) {
+  .brand { font-size: 17px; }
+  .brand .cube { font-size: 22px; margin-right: 3px; }
+  .header-social .social-link { font-size: 10px; padding: 10px 7px; }
+  .header-social svg { width: 16px; height: 16px; }
+  .services article { grid-template-columns: minmax(0, 1fr); padding: 20px; }
+  .services .object { display: none; }
+  .services .card-label, .services h3, .services p { grid-column: 1; }
+  .intro-actions .whatsapp, .impact-actions .whatsapp { font-size: 12px; gap: 8px; }
+}
+
+@media (hover: none) {
+  .button:hover, .social-link:hover, .primary:hover { transform: none; }
+  .services article:hover .object { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
