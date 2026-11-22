@@ -31,3 +31,8 @@ html.catalog-open{overflow:hidden}
 @media(max-width:650px){.catalog-section{padding-block:48px}.catalog-heading{display:block}.catalog-controls{margin-top:22px}.catalog-track{gap:14px}.catalog-card{flex-basis:86%}.catalog-card-label{padding:20px}.catalog-cover{aspect-ratio:1.15}.catalog-bottom{font-size:.8125rem}.catalog-dialog{inset:0;margin:0;width:100%;height:100%;height:100dvh;max-height:none;border:0;border-radius:0}.catalog-toolbar{padding:calc(12px + env(safe-area-inset-top,0px)) 16px 12px}.catalog-toolbar button{padding:12px;font-size:.875rem}.catalog-toolbar>span{font-size:.75rem}.catalog-dialog-content{padding:28px 16px calc(28px + env(safe-area-inset-bottom,0px))}.catalog-products{gap:12px}.product-info{padding:12px;gap:12px}.product-info h3{font-size:1rem}.product-quote{font-size:.875rem}.catalog-card:hover{transform:none}}
 @media(max-width:359px){.catalog-products{grid-template-columns:minmax(0,1fr)}.product-info h3{min-height:0}.catalog-toolbar>span{display:none}}
 @media(prefers-reduced-motion:reduce){.catalog-card{transition:none}.catalog-track{scroll-behavior:auto}}
+
+/* Generated category covers */
+.catalog-cover,.catalog-cover-natal{aspect-ratio:1;background:#07101e}
+.catalog-cover:before,.catalog-cover:after{display:none}
+.catalog-cover>img{display:block;width:100%;height:100%;object-fit:cover}
