@@ -3,9 +3,10 @@
   // Add a relative image path to each product when its final photo is available.
   const catalogs = {
     personalizados: { name: 'Personalizados', products: [
-      {name:'Troféu de beach tennis', image:''},
-      {name:'Chaveiro com nome', image:''},
-      {name:'Chaveiro com logo', image:''}
+      {name:'Troféu de beach tennis', image:'val-print-trofeu-beach-tennis.png'},
+      {name:'Chaveiro com nome', image:'val-print-chaveiro-seu-nome.png'},
+      {name:'Chaveiros BTS e ARMY', image:'val-print-chaveiros-bts-army.png'},
+      {name:'Chaveiro com logo', image:'val-print-chaveiros-logo-area-085.png'}
     ]},
     estatuas: { name:'Estátuas e Bonecos', products:[
       {name:'Venom', image:'val-print-boneco-venom.png'},
