@@ -8,10 +8,14 @@
       {name:'Chaveiro com logo', image:''}
     ]},
     estatuas: { name:'Estátuas e Bonecos', products:[
-      {name:'Mascote do Fortaleza', image:''},
-      {name:'Mascote do Palmeiras', image:''},
-      {name:'Mascote do Ceará', image:''},
-      {name:'Mascote do Flamengo', image:''}
+      {name:'Venom', image:'val-print-boneco-venom.png'},
+      {name:'Alien dourado', image:'val-print-boneco-alien-dourado.png'},
+      {name:'Goku', image:'val-print-boneco-goku.png'},
+      {name:'Mascote do Fortaleza', image:'val-print-mascote-fortaleza.png'},
+      {name:'Mascote do Palmeiras', image:'val-print-mascote-palmeiras.png'},
+      {name:'Mascote do Ceará', image:'val-print-mascote-ceara.png'},
+      {name:'Mascote do Flamengo', image:'val-print-mascote-flamengo.png'},
+      {name:'Esculturas geométricas', image:'val-print-esculturas-geometricas.png'}
     ]},
     natal: { name:'Especial Natal', products:[
       {name:'Renas decorativas', image:'val-print-renas-natal.png'},
