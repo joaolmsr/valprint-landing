@@ -19,7 +19,7 @@
       {name:'Presépio', image:'val-print-presepio-natal.png'},
       {name:'Porta-terço Nossa Senhora', image:'val-print-porta-terco-nossa-senhora-natal.png'},
       {name:'Porta-terço Sagrado Coração', image:'val-print-porta-terco-sagrado-coracao-natal.png'},
-      {name:'Escultura de frade', image:'val-print-escultura-frade-natal.png'}
+      {name:'Santos personalizados', image:'val-print-escultura-frade-natal.png'}
     ]},
     utilidades: { name:'Utilidades', products:[
       {name:'Placa de avaliação Google', image:'val-print-placa-google.png'},
@@ -97,3 +97,4 @@
   window.addEventListener('hashchange',sync);
   update();sync();
 })();
+
