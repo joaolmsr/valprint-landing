@@ -20,9 +20,11 @@
       {name:'Porta-terço Sagrado Coração', image:''}
     ]},
     utilidades: { name:'Utilidades', products:[
-      {name:'Placa de avaliação Google', image:''},
-      {name:'Organizadores e bandejas', image:''},
-      {name:'Placa Pix', image:''}
+      {name:'Placa de avaliação Google', image:'val-print-placa-google.png'},
+      {name:'Organizadores e bandejas', image:'val-print-organizadores-bandejas.png'},
+      {name:'Placa Pix', image:'val-print-placa-pix.png'},
+      {name:'Case para microfone Hollyland', image:'val-print-case-microfone-hollyland.png'},
+      {name:'Porta-medalha', image:'val-print-porta-medalha.png'}
     ]}
   };
   const track=document.getElementById('catalog-track');
