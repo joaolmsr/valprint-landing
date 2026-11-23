@@ -14,10 +14,12 @@
       {name:'Mascote do Flamengo', image:''}
     ]},
     natal: { name:'Especial Natal', products:[
-      {name:'Renas decorativas', image:''},
-      {name:'Árvore de Natal', image:''},
-      {name:'Presépio', image:''},
-      {name:'Porta-terço Sagrado Coração', image:''}
+      {name:'Renas decorativas', image:'val-print-renas-natal.png'},
+      {name:'Árvore de Natal', image:'val-print-arvore-natal.png'},
+      {name:'Presépio', image:'val-print-presepio-natal.png'},
+      {name:'Porta-terço Nossa Senhora', image:'val-print-porta-terco-nossa-senhora-natal.png'},
+      {name:'Porta-terço Sagrado Coração', image:'val-print-porta-terco-sagrado-coracao-natal.png'},
+      {name:'Escultura de frade', image:'val-print-escultura-frade-natal.png'}
     ]},
     utilidades: { name:'Utilidades', products:[
       {name:'Placa de avaliação Google', image:'val-print-placa-google.png'},
